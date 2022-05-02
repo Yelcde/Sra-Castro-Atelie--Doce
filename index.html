@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/menu.css">
+    <!--<script src="/javascript/menu.js"></script>-->
+    <title>Sra. Castro</title>
+</head>
+<body>
+    <header>
+        <h1 id='h1menu'><a href="index.html">Sra. Castro</a></h1>
+        <nav>
+            <ul>
+                <li id="descer"><a class='linkmenu'  href="/">home</a></li>
+                <li><a class='linkmenu' href="/">sabores</a></li>
+                <li><a class='linkmenu' href="/">contate-nos</a></li>
+                <li><a class='linkmenu' href="/">sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        var mexer = document.querySelector('#descer')
+        mexer.addEventListener('mouseover', function(){
+            this.style.paddingTop = '20px';
+        })
+        mexer.addEventListener('mouseout', function(){
+            this.style.paddingBottom = '-2000px';
+        })
+    </script>
+</body>
+</html>
