@@ -36,7 +36,7 @@ body{
                 
 header{
     background-color: var(--cor4);
-    height: 80px;
+    height: 100px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
     display: flex;
     justify-content: space-between;
