@@ -203,7 +203,7 @@ section.parallax h1{
     section.module p{ 
         transition: all 1s;
         margin: 0 auto; 
-        max-width: 350px; 
+        max-width: 300px; 
         /* margin-bottom: 40px;  */
     } 
 }
