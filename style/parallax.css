@@ -164,6 +164,10 @@ section.parallax h1{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
 }
 
+.aviso-itens{
+    margin: auto;
+}
+
 @media (max-width: 850px){
     body{
         overflow-x: hidden;
@@ -206,4 +210,8 @@ section.parallax h1{
         max-width: 300px; 
         /* margin-bottom: 40px;  */
     } 
+
+    .aviso-itens{
+        max-width: 300px; 
+    }
 }
