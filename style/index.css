@@ -160,3 +160,17 @@ img{
     max-width: 100%;
     display: block;
 }
+
+.zoom{
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.zoom img{
+    transition: all .5s;
+}
+
+.zoom img:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
