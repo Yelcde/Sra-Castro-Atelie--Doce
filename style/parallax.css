@@ -34,6 +34,7 @@ body{
     font-family: var(--fonte2);
     word-wrap: break-word;
     overflow-wrap: break-word;   /* ESSAS DUAS ÚLTIMAS SERVEM PARA, QUANDO CRIADO O TAMANHO DO CONTAINER, O TEXTO NÃO QUEBRE A LARGURA DO MESMO E SIM QUEBRE A SI PRÓPRIO */
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{

@@ -34,16 +34,6 @@ body{
     font-family: var(--fonte2);
 }
 
-.imagem{
-    width: 100%;
-    height: 83vh;
-    background-image: url("../images/Sra.\ Castro.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 section.escolha{
     background-color: var(--cor3);
     color: var(--cor1);
@@ -141,4 +131,32 @@ section.escolha > button > a:hover{
     position: absolute;
     z-index: -100;
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.658));
+}
+
+
+.nbolos{
+    background-color: var(--cor2);
+    transition: all 1s;
+}
+
+.nbolos:hover{
+    background-color: var(--cor3);
+    transition: all 1s;
+}
+
+.bolos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bolos > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
 }
