@@ -68,7 +68,7 @@ footer{
 .collum-right > .pfooter{
     padding-right: 20px;
     font-weight: normal;
-    /* text-align: justify; */
+    text-align: center;
     letter-spacing: 1px;
     max-width: 400px;
 }
