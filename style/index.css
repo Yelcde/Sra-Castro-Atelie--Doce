@@ -174,3 +174,40 @@ img{
     transform: scale(1.1);
     transition: all .5s;
 }
+
+.legenda{
+    display: flex;
+    position: relative;
+    transition: all .5s;
+}
+
+.legenda h1{
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0;
+    z-index: 3;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: var(--cor1);
+    font-weight: normal;
+    letter-spacing: 1px;
+    /* transition: all .5s; */
+}
+
+.legenda img{
+    position: relative;
+    width: 100%;
+}
+
+.legenda:hover h1{
+    visibility: visible;
+    /* background: rgba(0, 0, 0, 0.493); */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.685), transparent);
+    width: 100%;
+    padding-top: 50%;
+    /* padding-left: 20px; */
+    padding-bottom: -200px;
+    transition: all .5s;
+}
