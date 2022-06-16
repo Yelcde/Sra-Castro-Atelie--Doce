@@ -55,6 +55,13 @@ main{
     max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div{
+    padding: 30px;
 }
 
 section.module p{
@@ -105,6 +112,10 @@ section.module.parallax{
     -o-background-size: cover;
 }
 
+section.module.parallax > h1{
+    color: var(--cor1);
+}
+
 section.module.parallax:after{
     content: '';
     width: 100%;
@@ -118,15 +129,15 @@ section.module.parallax:after{
 }
 
 section.parallax-1{
-    background-image: url("../images/b1.png");
+    background-image: url("../images/b11.jpg");
 }
 
 section.parallax-2{
-    background-image: url("../images/b2.jpg");
+    background-image: url("../images/b12.jpg");
 }
 
 section.parallax-3{
-    background-image: url("../images/b3.jpg");
+    background-image: url("../images/b13.jpg");
 }
 
 section.parallax-4{

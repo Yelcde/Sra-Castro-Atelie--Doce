@@ -156,6 +156,12 @@ section.escolha > button > a:hover{
     margin: 10px;
 }
 
+@media (max-width: 700px){
+    .bolos > div {
+        flex: 1 1 150px;
+    }
+}
+
 img{
     max-width: 100%;
     display: block;
@@ -206,7 +212,7 @@ img{
     /* background: rgba(0, 0, 0, 0.493); */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.685), transparent);
     width: 96%;
-    padding-top: 50%;
+    padding-top: 20%;
     /* padding-left: 20px; */
     padding-bottom: -200px;
     transition: all .5s;
