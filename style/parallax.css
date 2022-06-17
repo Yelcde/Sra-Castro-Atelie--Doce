@@ -64,6 +64,22 @@ main{
     padding: 30px;
 }
 
+@media (max-width: 750px){
+    .container > div{
+        display: none;
+    }
+
+    .container2 > div{
+        display: block;
+    }
+}
+
+@media (min-width: 750px){
+    .container2 > div{
+        display: none;
+    }
+}
+
 section.module p{
     /* margin-bottom: 40px; */
     font-weight: 100;
