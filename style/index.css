@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
                 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
                                  
                 /* VARIAVEIS */
 :root{
@@ -21,6 +23,7 @@
                                      
     --fonte1: 'Passion One', cursive;
     --fonte2: 'Bebas Neue', cursive;
+    --fonte3: 'Dancing Script', cursive;
 }
                                  
                 /* CONFIGURAÇÕES GERAIS */
@@ -122,6 +125,16 @@ section.escolha > button > a:hover{
 
 .banner > .content > h1{
     letter-spacing: 10px;
+    font-family: var(--fonte3);
+    font-weight: bolder;
+    font-size: 3em;
+    padding: 20px;
+}
+
+@media (max-width: 750px){
+    .banner > .content > h1{
+        font-size: 1.5em;
+    }
 }
 
 .banner::after{
@@ -196,8 +209,10 @@ img{
     z-index: 3;
     padding-left: 10px;
     padding-bottom: 10px;
+    font-family: var(--fonte3);
     color: var(--cor1);
     font-weight: normal;
+    font-size: 1.5em;
     letter-spacing: 1px;
     /* transition: all .5s; */
 }

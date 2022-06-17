@@ -69,15 +69,79 @@ main{
         display: none;
     }
 
+    .botao > button{
+        display: none;
+    }
+
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .container2 > div{
         display: block;
+        flex-direction: column-reverse;
     }
+
 }
 
 @media (min-width: 750px){
     .container2 > div{
         display: none;
     }
+
+    .botao2 > button{
+        display: none;
+    }
+}
+
+.botao, .botao2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao > button{
+    background-color: #34af23;
+    border-color: #34af23;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 15px;
+    color: var(--cor1);
+    font-family: var(--fonte2);
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: all .5s;
+}
+
+.botao > button:hover{
+    background-color: #27851b;
+    border-color: #27851b;
+}
+
+.botao2 > button{
+    background-color: #34af23;
+    border-color: #34af23;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 15px;
+    color: var(--cor1);
+    font-family: var(--fonte2);
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: all .5s;
+}
+
+.botao2 > button:hover{
+    background-color: #27851b;
+    border-color: #27851b;
 }
 
 section.module p{
@@ -157,11 +221,11 @@ section.parallax-3{
 }
 
 section.parallax-4{
-    background-image: url("../images/b4.jpg");
+    background-image: url("../images/b14.jpg");
 }
 
 section.parallax-5{
-    background-image: url("../images/b5.jpg");
+    background-image: url("../images/b15.jpg");
 }
 
 section.parallax-6{
