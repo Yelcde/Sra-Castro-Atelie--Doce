@@ -123,6 +123,10 @@ main{
     border-color: #27851b;
 }
 
+.linkbutton{
+    font-family: var(--fonte2);
+}
+
 .botao2 > button{
     background-color: #34af23;
     border-color: #34af23;
