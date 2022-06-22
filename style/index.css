@@ -37,6 +37,64 @@ body{
     font-family: var(--fonte2);
 }
 
+                /* VÍDEO  */
+
+.banner{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+                
+.banner .video{
+    /* position: fixed; */
+    top: 93px;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+    z-index: -100;
+}
+                
+.banner > .content{
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    font-size: 2em;
+    color: var(--cor1);
+    text-shadow: 1px 1px 5px black;
+    z-index: -99;
+}
+                
+.banner > .content > h1{
+    letter-spacing: 10px;
+    font-family: var(--fonte3);
+    font-weight: bolder;
+    font-size: 3em;
+    padding: 20px;
+}
+                
+@media (max-width: 750px){
+    .banner > .content > h1{
+        font-size: 1.5em;
+    }
+                
+    .banner::after{
+        content: '';
+        width: 100%;
+        height: 3000px;
+        position: absolute;
+        z-index: -100;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.658));
+    }
+}
+
+            /* ESCOLHA DE BOLOS */
+
 section.escolha{
     background-color: var(--cor3);
     color: var(--cor1);
@@ -90,60 +148,6 @@ section.escolha > button > a:hover{
     border-color: var(--cor4);
     transition: all .5s;
     font-size: 1.8em;
-}
-
-.banner{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.banner .video{
-    /* position: fixed; */
-    top: 93px;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    object-position: center;
-    z-index: -100;
-}
-
-.banner > .content{
-    position: absolute;
-    top: auto;
-    left: auto;
-    right: auto;
-    font-size: 2em;
-    color: var(--cor1);
-    text-shadow: 1px 1px 5px black;
-    z-index: -99;
-}
-
-.banner > .content > h1{
-    letter-spacing: 10px;
-    font-family: var(--fonte3);
-    font-weight: bolder;
-    font-size: 3em;
-    padding: 20px;
-}
-
-@media (max-width: 750px){
-    .banner > .content > h1{
-        font-size: 1.5em;
-    }
-}
-
-.banner::after{
-    content: '';
-    width: 100%;
-    height: 3000px;
-    position: absolute;
-    z-index: -100;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.658));
 }
 
 
