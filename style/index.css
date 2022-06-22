@@ -39,51 +39,64 @@ body{
 
                 /* VÍDEO  */
 
-.banner{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.video{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
-                
-.banner .video{
-    /* position: fixed; */
-    top: 93px;
-    left: 0;
+
+.paravideo{
+    height: 515px;
+}
+
+.paravideo video{
+    max-height: 130%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
     object-fit: cover;
-    width: 100%;
-    object-position: center;
-    z-index: -100;
 }
-                
-.banner > .content{
+
+.paracontent > .container > h1{
+    letter-spacing: 10px;
+    font-family: var(--fonte3);
+    font-weight: bolder;
+    padding: 20px;
     position: absolute;
-    top: auto;
-    left: auto;
-    right: auto;
-    font-size: 2em;
+    margin: 0 auto;
+    top: 50%;
+    /* left: 50%; */
+    /* right: 50%; */
+    font-size: 6em;
     color: var(--cor1);
     text-shadow: 1px 1px 5px black;
     z-index: -99;
 }
-                
-.banner > .content > h1{
-    letter-spacing: 10px;
-    font-family: var(--fonte3);
-    font-weight: bolder;
-    font-size: 3em;
-    padding: 20px;
+
+@media (max-width: 1000px){
+    .paravideo video{
+        max-height: 100%;
+    }
 }
-                
+
+@media (max-width: 860px){
+    .paravideo video{
+        max-height: 100%;
+    }
+}
+
 @media (max-width: 750px){
-    .banner > .content > h1{
-        font-size: 1.5em;
+    .paravideo{
+        height: 500px;
+    }
+
+    .paravideo video{
+        max-height: 100%;
+    }
+
+    .paracontent > .container > h1{
+        font-size: 3.5em;
     }
                 
-    .banner::after{
+    .paravideo video::after{
         content: '';
         width: 100%;
         height: 3000px;

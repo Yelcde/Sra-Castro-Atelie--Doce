@@ -248,6 +248,10 @@ section.parallax-10{
     background-image: url("../images/b10.jpg");
 }
 
+section.parallax-v{
+    background-image: url("../video/bolo.mp4");
+}
+
 section.parallax h1{
     color: var(--cor7);
     text-align: center;
