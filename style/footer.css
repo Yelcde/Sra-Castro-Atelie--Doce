@@ -31,14 +31,13 @@ footer{
     color: white;
     font-family: var(--fonte3);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 30px;
 }
 
 .collum-left{
-    min-width: 40%;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .collum-left > h3{
@@ -53,7 +52,7 @@ footer{
 }
 
 .collum-left > ul > li:hover{
-    padding-left: 15px;
+    padding-left: 5px;
     transition: all .5s;
     color: var(--cor4);
 }
@@ -67,7 +66,6 @@ footer{
     transition: all .5s;
 }
 
-
 .collum-right > .pfooter{
     padding-right: 20px;
     font-weight: normal;
@@ -77,9 +75,74 @@ footer{
     font-size: 1em;
 }
 
-/* @media (max-width: 680px){ */
-    /* footer{ */
-        /* display: block; */
-        /* margin: 0 auto; */
-    /* } */
+.collum-left2{
+    display: none;
+}
+
+.collum-left2 > h3{
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.collum-left2 > .items > ul > li{
+    list-style: none;
+    transition: all .5s;
+}
+
+/* .collum-left2 > .items > ul > li:hover{ */
+    /* padding-left: 5px; */
+    /* transition: all .5s; */
+    /* color: var(--cor4); */
 /* } */
+
+.collum-left2 > .items > ul > li > a{
+    transition: all .5s;
+}
+
+.collum-left2 > .items > ul > li > a:hover{
+    color: var(--cor2);
+    transition: all .5s;
+}
+
+@media (max-width: 650px){
+    footer{
+        flex-direction: column;
+    }
+
+    .collum-right{
+        padding-top: 20px;
+    }
+
+    .collum-left{
+        display: none;
+    }
+
+    .collum-left2{
+        display: block;
+    }
+
+    .collum-left2 > h3{
+        /* text-align: center; */
+        font-size: 1.5em;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .items > ul{
+        padding: 10px;
+    }
+
+    .items > ul > li{
+        padding: 5px;
+    }
+
+    .collum-right{
+        max-width: 350px;
+        flex-wrap: wrap;
+    }
+}
