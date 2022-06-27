@@ -1,5 +1,20 @@
+                 /* VARIAVEIS */
+                 
+:root{
+                 
+                /* CORES */
+                            
+    --cor1: #F2F2F2;
+    --cor2: #64504F;
+    --cor3: #847272;
+    --cor4: #400D11;
+    --cor5: #260306;
+    --cor6: #60747B;
+    --cor7: #5ebee0;
+}
+
 body{
-    background-color: green;
+    background-color: var(--cor2);
 }
 
 .botao{
@@ -15,12 +30,14 @@ body{
     border-radius: 5px;
     border-width: 5px;
     padding: 15px;
-    color: var(--cor1);
+    color: var(--cor2);
     font-weight: normal;
     letter-spacing: 1px;
     font-size: 20px;
     margin-top: 15px;
     transition: all .5s;
+    min-width: 300px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
 }
 
 .botao > button:hover{
@@ -33,18 +50,54 @@ body{
 }
 
 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin: auto;
-    max-width: 1000px;
-    background-color: tomato;
+    max-width: 800px;
+    background-color: var(--cor4);
     padding: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
     height: 230px;
+    transition: all .5s;
 }
 
-.content{
-   
-   
+@media (max-width: 920px){
+    .container{
+        max-width: 550px;
+        transition: all .5s;
+    }
+}
+
+@media (max-width: 660px){
+    .container{
+        max-width: 400px;
+        transition: all .5s;
+    }
+}
+
+                /* BOTÕES */
+
+.botao > .instagram{
+    background: linear-gradient(to left, #613BCF, #D42FAF, #FF2C89, #FF6A10, #FDAE35);
+    border: none;
+    transition: all .5s;
+}
+
+.botao > button > .icon{
+    color: var(--cor1);
+
+}
+
+.botao > .instagram:hover{
+    background: linear-gradient(to left, #FDAE35, #FF6A10, #FF2C89, #D42FAF, #613BCF);
+    border: none;
+    transition: all .5s;
+}
+
+.botao > .whatsapp{
+    border: none
 }

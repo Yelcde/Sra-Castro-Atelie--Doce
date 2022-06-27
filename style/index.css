@@ -126,7 +126,7 @@ section.escolha > h1{
 
 section.escolha > button{
     background-color: transparent;
-    border-color: var(--cor2);
+    border-color: var(--cor5);
     border-style: solid;
     border-radius: 5px;
     /* border-width: 5px; */
@@ -141,7 +141,7 @@ section.escolha > button{
 }
 
 section.escolha > button > a{
-    color: var(--cor2);
+    color: var(--cor5);
     font-family: var(--fonte2);
     font-weight: normal;
     letter-spacing: 1px;
